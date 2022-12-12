@@ -90,3 +90,7 @@ project
 23        | Merge k Sorted Lists                                         | [https://leetcode.com/problems/merge-k-sorted-lists/](https://leetcode.com/problems/merge-k-sorted-lists/)                                                                                 | Heaps             | C++      | Hard |
 50        | Pow(x,n)                                         | [https://leetcode.com/problems/powx-n/](https://leetcode.com/problems/powx-n/)                                                                                 | Binary Search             | C++      | Medium |
 658        | Find K Closest Elements                                         | [https://leetcode.com/problems/find-k-closest-elements/](https://leetcode.com/problems/find-k-closest-elements/)                                                                                 | Binary Search, 2 pointer             | C++      | Medium |
+350        | Intersection of Two Arrays II                                         | [https://leetcode.com/problems/intersection-of-two-arrays-ii/](https://leetcode.com/problems/intersection-of-two-arrays-ii/)                                                                                 | Binary Search, 2 pointer,             | C++      | Easy |
+
+
+
