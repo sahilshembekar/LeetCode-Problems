@@ -1,5 +1,9 @@
 # LeetCode Solutions
 
+## What is LeetCode?
+
+LeetCode is one of the most well-known online judge platforms that one can use to practice their programming skills by solving coding questions. It currently has over 2000 coding questions with varing range of difficulty
+Check it out here -> [LeetCode](https://leetcode.com/)
 ## Repository Structure
 
 ```
@@ -12,7 +16,7 @@ project
 ## Key points
 1. The table contains all the problems that have been solved so far. 
 2. There are some problems which have 2 or more solutions. Check number of `class XYZ{};` in `main.cpp` file.
-3. `Readme.md` last updated on `21th December 2021` 
+3. `Readme.md` last updated on `27th December 2021` 
 
 #
 
