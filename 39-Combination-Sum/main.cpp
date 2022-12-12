@@ -40,7 +40,7 @@ public:
         path.push_back(candidates[index]);
         
         helper(candidates,index,target- candidates[index], path);
-        //noUnlimited supply hence same index and target reduced by number by chosen
+        //Unlimited supply hence same index and target reduced by number by chosen
         
         
     }

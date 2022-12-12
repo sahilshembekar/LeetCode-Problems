@@ -25,7 +25,7 @@ public:
         
         //logic
         
-        for (int i=index; i<num.size();i++) {  // we start at the pivot each time as we first cover 12,123,1234,12345 then go to 2 and do 2,23,234,2345 and so on
+        for (int i=index; i<num.size();i++) {  // we start at the pivot each time as we first cover 1,1&23,1&234 then go to 2 and do 12,12&3,12&34 and so on
             
             //for preceding 0 //to handle test case with 105
             
@@ -36,7 +36,7 @@ public:
             
             long curr = stol(s,nullptr,10);
             
-            if(index == 0) {//pivot at 0 tht is we are at root
+            if(index == 0) {//pivot at 0 that is we are at root
                 helper(num,target,i+1,curr,curr,path+to_string(curr)); 
                 //calc and tail are curr and move to the next index value, concat curr to the contents of the path 
             }
@@ -54,3 +54,15 @@ public:
         }
     }
 };
+
+/*
+i/p
+"123"
+3
+
+o/p
+[]
+
+We need ti use elements to get 3, hence o/p is []
+
+*/

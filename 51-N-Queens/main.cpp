@@ -97,7 +97,7 @@ public:
             j++;
             //go till we reach the upper right corner
         }
-        return true; //otherwise true since there is unsafety issue
+        return true; //otherwise true since there is no unsafety issue
         
         
     }

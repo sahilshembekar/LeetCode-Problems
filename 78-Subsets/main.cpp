@@ -162,6 +162,7 @@ public:
                 temp.push_back(nums[i]);
                 //Add the new list to the list of lists
                 result.push_back(temp);
+                //keep the original list the same and all new lists as extras separately
             }
         }
         return result;
