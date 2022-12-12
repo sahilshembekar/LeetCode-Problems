@@ -19,7 +19,7 @@ project
 ## Key points
 1. The table contains all the problems that have been solved so far. 
 2. There are some problems which have 2 or more solutions. Check number of `class XYZ{};` in `main.cpp` file.
-3. `Readme.md` last updated on `13th January 2022` 
+3. `Readme.md` last updated on `21st January 2022` 
 
 #
 
@@ -119,3 +119,4 @@ project
 1043        | Partition Array for Maximum Sum                                       | [https://leetcode.com/problems/partition-array-for-maximum-sum/](https://leetcode.com/problems/partition-array-for-maximum-sum/) | Dynamic Programming             | C++      | Medium | 
 221       | Maximal Square                                      | [https://leetcode.com/problems/maximal-square/](https://leetcode.com/problems/maximal-square/) | Dynamic Programming             | C++      | Medium | 
 62       | Unique Paths                                      | [https://leetcode.com/problems/unique-paths/](https://leetcode.com/problems/unique-paths/) | Dynamic Programming             | C++      | Medium | 
+110       | Balanced Binary Tree                                     | [https://leetcode.com/problems/balanced-binary-tree/](https://leetcode.com/problems/balanced-binary-tree/) | Trees             | C++      | Easy | 
