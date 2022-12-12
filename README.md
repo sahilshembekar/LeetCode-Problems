@@ -19,7 +19,7 @@ project
 ## Key points
 1. The table contains all the problems that have been solved so far. 
 2. There are some problems which have 2 or more solutions. Check number of `class XYZ{};` in `main.cpp` file.
-3. `Readme.md` last updated on `27th December 2021` 
+3. `Readme.md` last updated on `13th January 2022` 
 
 #
 
