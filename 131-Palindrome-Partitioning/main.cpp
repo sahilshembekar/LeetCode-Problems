@@ -47,3 +47,49 @@ public:
         return true;
     }
 };
+
+//Normal recursion without index
+
+// Time Complexity : exponential
+// Space Complexity :exponential
+
+class Solution {
+public:
+    vector<vector<string>> result;
+    vector<vector<string>> partition(string s) {
+        if(s.empty() || s.size()== 0) return result;
+        
+        vector<string> path;
+        helper(s,path);
+        return result;
+    }
+    
+    void helper (string s, vector <string> path) {
+        //base
+        if (s.size() == 0 ) { //basically till all elements from the string finish
+            result.push_back(path);
+            return;
+        }
+        
+        //logic 
+        for (int i =0; i<s.size(); i++) { 
+            if (isPalindrome(s,0,i)) { // Only check its babies if it is itself palindrome,otherwise skip
+                vector <string> temp(path);
+                temp.push_back(s.substr(0,i+1));
+                
+                helper(s.substr(i+1),temp); 
+            }
+        }
+    }
+    
+    bool isPalindrome(string s, int l, int r) {
+        while(l<r) {
+            if(s[l] != s[r]) {
+                return false;
+            }
+            l++;
+            r--;
+        }
+        return true;
+    }
+};
