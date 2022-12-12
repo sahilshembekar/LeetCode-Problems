@@ -95,6 +95,6 @@ project
 4        | Median of Two Sorted Arrays                                         | [https://leetcode.com/problems/median-of-two-sorted-arrays/](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                                                 | Binary Search             | C++      | Hard |
 438        | Find All Anagrams in a String                                        | [https://leetcode.com/problems/find-all-anagrams-in-a-string/](https://leetcode.com/problems/find-all-anagrams-in-a-string/)                                                                                 | String             | C++      | Medium |
 720        | Longest Word in Dictionary                                        | [https://leetcode.com/problems/longest-word-in-dictionary/](https://leetcode.com/problems/longest-word-in-dictionary/)                                                                                 | String, BFS,DFS,Backtracking            | C++      | Medium |
-
+3        | Longest Substring Without Repeating Characters                                        | [https://leetcode.com/problems/longest-substring-without-repeating-characters/](https://leetcode.com/problems/longest-substring-without-repeating-characters/)                                                                                 | String            | C++      | Medium |
 
 
