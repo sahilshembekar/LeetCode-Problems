@@ -86,3 +86,64 @@ public:
         
     }
 };
+
+
+
+//Binary Search Solution
+
+/*
+Time Complexity = O(nlogm)
+Space Complexity = O(1)
+where n1 is the number of elements in array nums1 and n2 is the number of elements in the array nums2.
+*/
+
+class Solution {
+public:
+    int binarySearch (vector<int> nums, int target, int low, int high) {
+        while (low <= high) {
+            int mid = low + (high-low)/2;
+            if (nums[mid] == target) {
+                // to make sure we find first occurence of element
+                if (mid == low || nums[mid-1] < nums[mid]) {
+                    return mid;
+                }
+                //move to the left since this is not the first instance maybe there are multiple 4's
+                high = mid-1;
+            }
+            else if(nums[mid] < target) {
+                // Move towards the target which on the right side
+                low = mid+1;
+            }
+            else {
+                high =  mid-1;
+            }
+        }
+        return -1; //else when the element is not found
+    }
+    
+    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+        int n1 = nums1.size();
+        int n2 = nums2.size();
+        if (n1>n2) {
+            intersect(nums2,nums1); //nums2 is smaller than nums1
+        }
+        int i;
+        sort(nums1.begin(), nums1.end());
+        sort(nums2.begin(), nums2.end());
+        
+        vector<int> result;
+        
+        int low = 0;
+        int high = nums2.size()-1;
+        //The nums2 array is bigger hence we do binary search on that one
+        for (i=0; i<n1; i++) {
+            int index = binarySearch(nums2, nums1[i], low, high);
+            if (index != -1) {
+                result.push_back(nums1[i]);
+                //Skip all the elements including this one
+                low = index+1;
+            }
+        }
+        return result;
+    }
+};
