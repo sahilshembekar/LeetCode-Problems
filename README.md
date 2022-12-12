@@ -12,7 +12,7 @@ project
 ## Key points
 1. The table contains all the problems that have been solved so far. 
 2. There are some problems which have 2 or more solutions. Check number of `class XYZ{};` in `main.cpp` file.
-3. `Readme.md` last updated on `16th December 2021` 
+3. `Readme.md` last updated on `18th December 2021` 
 
 #
 
@@ -91,6 +91,7 @@ project
 50        | Pow(x,n)                                         | [https://leetcode.com/problems/powx-n/](https://leetcode.com/problems/powx-n/)                                                                                 | Binary Search             | C++      | Medium |
 658        | Find K Closest Elements                                         | [https://leetcode.com/problems/find-k-closest-elements/](https://leetcode.com/problems/find-k-closest-elements/)                                                                                 | Binary Search, 2 pointer             | C++      | Medium |
 350        | Intersection of Two Arrays II                                         | [https://leetcode.com/problems/intersection-of-two-arrays-ii/](https://leetcode.com/problems/intersection-of-two-arrays-ii/)                                                                                 | Binary Search, 2 pointer,             | C++      | Easy |
+275        | H-Index II                                         | [https://leetcode.com/problems/h-index-ii/](https://leetcode.com/problems/h-index-ii/)                                                                                 | Binary Search             | C++      | Medium |
 
 
 
