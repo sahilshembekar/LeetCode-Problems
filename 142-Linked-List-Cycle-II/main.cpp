@@ -37,7 +37,7 @@ public:
             fast = fast->next; // both at 1x speed
         }
         
-        return slow; // the point where they meet is start of the cycle // cacn also return fast
+        return slow; // the point where they meet is start of the cycle // can also return fast
         
     }
 };
