@@ -48,3 +48,45 @@ public:
         return result;
     }
 };
+
+//DFS approach
+/*
+Time Complexity = O(N)
+Space Complexity = O(N)
+where N is the number of elements in the vector employees.
+*/
+/*
+// Definition for Employee.
+class Employee {
+public:
+    int id;
+    int importance;
+    vector<int> subordinates;
+};
+*/
+
+class Solution {
+    int result =0;
+    map <int, Employee*> m;
+public:
+    int getImportance(vector<Employee*> employees, int id) {
+        for (int i=0; i<employees.size();i++) {
+            m[employees[i]->id] = employees[i];
+        }
+        dfs(id);
+        return result;
+    }
+    
+    void dfs (int id) {
+        //Base case
+        
+        //logic
+        Employee* e = m[id];
+        result += e->importance; //importance of itself
+        
+        vector <int> sub(e->subordinates);
+        for (int i=0; i<sub.size(); i++) {
+            dfs(sub[i]);
+        }
+    }
+};
