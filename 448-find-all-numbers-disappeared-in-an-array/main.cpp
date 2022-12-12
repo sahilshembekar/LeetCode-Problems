@@ -8,6 +8,8 @@
 //Where N is the Number of elements int the vector nums.
 //Here the space complexity is O(1) because we are taking the extra space (vector<int> ans) and returning the same through the function.
 
+// Can use hashset -> same time but O(N) space
+
 class Solution {
 public:
     vector<int> findDisappearedNumbers(vector<int>& nums) {
