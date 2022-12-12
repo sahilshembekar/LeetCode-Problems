@@ -35,9 +35,9 @@ public:
                 
                 string newstr;
                 for (int j=0;j<times;j++) {
-                    newstr.append(curr);
+                    newstr.append(curr); // Also can do, newstr = newstr+curr;
                 }
-                curr = strstack.top().append(newstr); //append the baby with parent
+                curr = strstack.top().append(newstr); //append the baby with parent // Also can do, curr = strstack.top()+newstr;
                 strstack.pop();
             }
             else {
