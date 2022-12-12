@@ -3,7 +3,10 @@
 ## What is LeetCode?
 
 LeetCode is one of the most well-known online judge platforms that one can use to practice their programming skills by solving coding questions. It currently has over 2000 coding questions with varing range of difficulty
-Check it out here -> [LeetCode](https://leetcode.com/)
+
+
+
+Check it out here -> [https://leetcode.com/](https://leetcode.com/)
 ## Repository Structure
 
 ```
