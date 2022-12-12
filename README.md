@@ -120,3 +120,4 @@ project
 221       | Maximal Square                                      | [https://leetcode.com/problems/maximal-square/](https://leetcode.com/problems/maximal-square/) | Dynamic Programming             | C++      | Medium | 
 62       | Unique Paths                                      | [https://leetcode.com/problems/unique-paths/](https://leetcode.com/problems/unique-paths/) | Dynamic Programming             | C++      | Medium | 
 110       | Balanced Binary Tree                                     | [https://leetcode.com/problems/balanced-binary-tree/](https://leetcode.com/problems/balanced-binary-tree/) | Trees             | C++      | Easy | 
+139       | Word Break                                    | [https://leetcode.com/problems/word-break/](https://leetcode.com/problems/word-break/) | Dynamic Programming             | C++      | Medium | 
