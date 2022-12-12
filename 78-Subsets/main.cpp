@@ -101,3 +101,40 @@ public:
         }
     }
 };
+
+// For loop //backtrack
+//New path at each node // pass by reference
+
+/*
+Time Complexity = Exponential = 2 raise to n // 2 because 2 options
+Space Complexity = Exponential
+*/
+
+class Solution {
+public:
+    vector <vector <int>> result;
+    vector<vector<int>> subsets(vector<int>& nums) {
+        if (nums.size() == 0) return result;
+        vector <int> path;
+        helper(nums,0,path);
+        return result;
+    }
+    void helper(vector<int>& nums, int index, vector <int> &path) {
+        //base
+        //no if since size is already checked
+        
+        result.push_back(path);
+        
+        //logic
+        
+        for (int i = index; i <nums.size(); i++) {
+            //action
+            path.push_back(nums[i]);
+            //recurse
+            helper(nums,i+1,path); 
+            //backtrack
+            path.pop_back();
+            
+        }
+    }
+};
