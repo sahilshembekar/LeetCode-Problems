@@ -12,7 +12,7 @@ project
 ## Key points
 1. The table contains all the problems that have been solved so far. 
 2. There are some problems which have 2 or more solutions. Check number of `class XYZ{};` in `main.cpp` file.
-3. `Readme.md` last updated on `19th December 2021` 
+3. `Readme.md` last updated on `20th December 2021` 
 
 #
 
@@ -96,5 +96,4 @@ project
 438        | Find All Anagrams in a String                                        | [https://leetcode.com/problems/find-all-anagrams-in-a-string/](https://leetcode.com/problems/find-all-anagrams-in-a-string/)                                                                                 | String             | C++      | Medium |
 720        | Longest Word in Dictionary                                        | [https://leetcode.com/problems/longest-word-in-dictionary/](https://leetcode.com/problems/longest-word-in-dictionary/)                                                                                 | String, BFS,DFS,Backtracking            | C++      | Medium |
 3        | Longest Substring Without Repeating Characters                                        | [https://leetcode.com/problems/longest-substring-without-repeating-characters/](https://leetcode.com/problems/longest-substring-without-repeating-characters/)                                                                                 | String            | C++      | Medium |
-
-
+791        | Custom Sort String                                        | [https://leetcode.com/problems/custom-sort-string/](https://leetcode.com/problems/custom-sort-string/)                                                                                 | String            | C++      | Medium |
