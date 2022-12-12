@@ -40,3 +40,49 @@ public:
         return result;
     }
 };
+
+
+//2 pointer Solution
+
+/*
+if array is not sorted already.
+Time Complexity = O(nlogn + mlogm)
+Space Complexity = O(1)
+
+if array is already sorted.
+Time Complexity = O(n + m)
+Space Complexity = O(1)
+where n1 is the number of elements in array nums1 and n2 is the number of elements in the array nums2.
+*/
+
+class Solution {
+public:
+    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+        int n1 = nums1.size();
+        int n2 = nums2.size();
+        
+        int i;
+        
+        vector <int> result;
+        sort(nums1.begin(), nums1.end());
+        sort(nums2.begin(),nums2.end());
+        int p1=0, p2=0;
+        while(p1<n1 && p2<n2) {
+            if (nums1[p1] == nums2[p2]) {
+                //when the common number is found push it in result
+                result.push_back(nums1[p1]);
+                p1++;
+                p2++;
+            }
+            else if (nums1[p1] < nums2[p2]) {
+                //Move the p1 pointer if because value there is smaller
+                p1++;
+            }
+            else {
+                p2++;
+            }
+        }
+        return result;
+        
+    }
+};
