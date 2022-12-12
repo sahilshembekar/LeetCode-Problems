@@ -94,6 +94,7 @@ project
 275        | H-Index II                                         | [https://leetcode.com/problems/h-index-ii/](https://leetcode.com/problems/h-index-ii/)                                                                                 | Binary Search             | C++      | Medium |
 4        | Median of Two Sorted Arrays                                         | [https://leetcode.com/problems/median-of-two-sorted-arrays/](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                                                 | Binary Search             | C++      | Hard |
 438        | Find All Anagrams in a String                                        | [https://leetcode.com/problems/find-all-anagrams-in-a-string/](https://leetcode.com/problems/find-all-anagrams-in-a-string/)                                                                                 | String             | C++      | Medium |
+720        | Longest Word in Dictionary                                        | [https://leetcode.com/problems/longest-word-in-dictionary/](https://leetcode.com/problems/longest-word-in-dictionary/)                                                                                 | String             | C++      | Medium |
 
 
 
