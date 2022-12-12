@@ -14,6 +14,7 @@ public:
                 return mid;
             }
             else if (nums[low]<=nums[mid]) {
+                // left side is sorted
                 if (nums[low]<= target && target< nums[mid]) {
                     high = mid-1;
                 }
@@ -22,6 +23,7 @@ public:
                 }
             }
             else {
+                // right side is sorted
                 if (nums[mid] < target && target <=nums[high]) {
                     low = mid+1;
                 }
