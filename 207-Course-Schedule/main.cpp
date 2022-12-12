@@ -76,3 +76,82 @@ public:
             
     }
 };
+
+
+/*
+Time Complexity = O(V+E)
+Space Complexity = O(V+E)
+where V is the number pf courses and E is the dependencies.
+*/
+
+
+
+class Solution {
+public:
+    map <int, vector <int>> m;
+    vector <bool> path; //contains vertices/courses we have been to so far
+    vector <bool> visited; //contains vertices/courses we have visited so far
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        if (prerequisites.size() == 0) {
+            return true;
+        }
+        
+        //Initailize the vec with all false
+        for(int i=0;i<numCourses;i++)
+        {
+            visited.push_back(false);
+            path.push_back(false);
+        }
+        
+        //storing the dependencies in the map to efficiently access the courses dependent on that particular course.
+        for(int i=0;i<prerequisites.size();i++)
+        {
+            if(m.find(prerequisites[i][1])!=m.end())
+                m[prerequisites[i][1]].push_back(prerequisites[i][0]);
+            else
+            {
+                vector<int> z;
+                z.push_back(prerequisites[i][0]);
+                m[prerequisites[i][1]] = z;
+            }
+        }
+        
+        for (int i=0; i <numCourses; i++) {
+            if (!visited[i] && hasCycle(i) ) { //if we have not visted the course and we have detected a cycle from that node 
+                return false;
+            }
+        }
+        return true;    
+    }
+    
+    bool hasCycle (int course) {
+        //base
+        //path check
+        if (path[course]) {
+            return true;
+        }
+        
+        if (visited[course]) {
+            return false;
+        }
+        
+        //logic
+        visited[course] = true;
+        
+        //action
+        path[course] = true;
+        vector <int> ans(m[course]); // get the vector value from the corresponding key of map
+        if (ans.size() != 0) { // if the list exists
+            for (int j=0; j<ans.size(); j++) {
+                if (hasCycle(ans[j]) ) {
+                    return true; //means a cycle is detected for this particular node
+                }
+            }
+        }
+        //backtrack
+        path[course] = false; //nullify the changes  we made to the path when we traverse back i.e. when auto pop happens
+        return false; //Otherwise
+            
+    }
+    
+};
