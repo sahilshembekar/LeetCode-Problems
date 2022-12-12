@@ -24,6 +24,7 @@ public:
                 set1.erase(c);
             }
         }
+        // Check if set is empty, if not empty count+1 for 1 char at the centre
         if (!set1.empty()) {
             count++;
         }
