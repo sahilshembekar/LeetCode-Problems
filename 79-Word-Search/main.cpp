@@ -27,7 +27,7 @@ public:
         if (word.size() == index) return true; //that is we reach the last element of the word basically we finished the word and found it
         
         
-        if(i<0 || j<0 || i ==m || j==n || word[index]!= board[i][j]) { //word[index]!= board[i][j] can also do this instead of # check
+        if(i<0 || j<0 || i ==m || j==n || word[index]!= board[i][j]) { 
             return false;
         }
         
@@ -49,13 +49,14 @@ public:
             for (int k =0; k<dirs.size(); k++) {
                 int r = i + dirs[k][0];
                 int c = j + dirs[k][1];
-                if (backtrack (board,word,r,c,index+1)) return true; //got to the next char of the word
-                // if the whole word is found then we reurn true and backtrack one by one
+                if (backtrack (board,word,r,c,index+1)) return true; //go to the next char of the word
+                // if the whole word is found then we return true and backtrack one by one 
+                // this true will actually be returned to function call of main function!?
             }
 
             //backtrack
             board[i][j] = ch; // restore the character
         }
-        return false; //if from none of the neighours we are able to get the next char of the word then return false
+        return false; //if from none of the neighours we are able to get the next char of the word then return false 
     }
 };

@@ -50,7 +50,7 @@ public:
             }
             count++;
             string replace;
-            TrieNode *curr = root; //pointer and root and start from there now
+            TrieNode *curr = root; //pointer at root and start from there now
             for (int j =0; j<word.length();j++) {
                 char ch = word[j];
                 if (curr->children[ch -'a'] == NULL || curr->isEnd) {
