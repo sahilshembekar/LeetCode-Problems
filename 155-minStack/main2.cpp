@@ -16,7 +16,7 @@ public:
     void push(int val) {
         //  st.push(val); //if you use this here it will not go through the if loop. Pretty logical why...
         if (val <= min) {
-            st.push(min);            
+            st.push(min); // first push the previous min then update it            
             min = val;
         }
         st.push(val);
