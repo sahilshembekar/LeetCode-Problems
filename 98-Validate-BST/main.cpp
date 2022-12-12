@@ -1,4 +1,10 @@
-// No inorder
+/*
+Time Complexity = O(N)
+Space Complexity = O(h)
+where n is the number of nodes and h is the height of the tree.
+*/
+
+// No inorder with prev
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -72,7 +78,7 @@ public:
 };
 
 
-// bool inorder()
+// bool inorder() + flag/result
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -100,6 +106,44 @@ class Solution {
         prev = root;
         inorder(root->right);
         return flag;
+    }
+public:
+    bool isValidBST(TreeNode* root) {
+        
+        return inorder(root);
+    }
+};
+
+// bool inorder No flag/result
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+    
+    //bool flag=true;
+    TreeNode *prev=NULL;
+    
+    bool inorder(TreeNode* root) {
+        if (root == NULL) {
+            return true;
+        }
+        if (inorder(root->left) == false) {
+            return false;   
+        }
+        if (prev!= NULL && prev->val >= root->val) {
+            return false;
+        }
+        prev = root;
+        return inorder(root->right);
+        //return flag;
     }
 public:
     bool isValidBST(TreeNode* root) {
