@@ -25,3 +25,35 @@ public:
         return dfs(m,n,i+1,j) + dfs(m,n,i,j+1); // right (column+1) + bottom (row+1)
     }
 };
+
+/*
+Time Complexity = O(m*n)
+Space Complexity = O(m*n)
+where m is the number of rows and n is the number of coloumns.
+*/
+
+//Bottom up DP
+
+class Solution {
+public:
+    int uniquePaths(int m, int n) {
+        //NULL case
+        if(m == 0 && n == 0) return 0;
+        //Made a dummy row and column
+        // can be also done without a dummy stuff. just add (a) and reove (b)
+        vector<vector<int>> dp(m+1,vector<int> (n+1,0)); //Declaring 2d vector with m rows and n columns
+        
+        dp[m-1][n-1] = 1; //Last Element is made 1
+        for (int i=m-1; i>=0; i--) {
+            for(int j=n-1; j>=0; j--) {
+                // if(i == m-1 || j == n-1) { dp[i][j] = 1; //Last row and column directly made 1}
+                if(i == m-1 && j == n-1) { //(b)
+                    continue; //that is don't do anything for the last element
+                }
+                
+                dp[i][j] = dp[i+1][j] + dp[i][j+1]; //Add element from the bottom and right
+            }
+        }
+        return dp[0][0];
+    }
+};
