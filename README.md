@@ -1,1 +1,1 @@
-# Leetcode Grind
+# Leetcode Solutions
