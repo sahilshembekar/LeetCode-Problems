@@ -33,7 +33,7 @@ public:
 };
 
 // Recursive //backtrack
-//New path at each node // pass by reference
+ // pass by reference
 
 /*
 Time Complexity = Exponential = 2 raise to n // 2 because 2 options
@@ -103,7 +103,7 @@ public:
 };
 
 // For loop //backtrack
-//New path at each node // pass by reference
+// pass by reference
 
 /*
 Time Complexity = Exponential = 2 raise to n // 2 because 2 options
@@ -136,5 +136,34 @@ public:
             path.pop_back();
             
         }
+    }
+};
+
+// Without recursing
+//Special solution only for this prob
+/*
+Time Complexity = Exponential
+Space Complexity = Exponential
+*/
+
+class Solution {
+public:
+    vector<vector<int>> subsets(vector<int>& nums) {
+        vector <vector <int>> result;
+        vector <int> temp;
+        result.push_back(temp); //Add empty list to list of lists
+        
+        for (int i =0; i<nums.size(); i++) {
+            int size = result.size(); //Move till size of result not size of nums
+            for (int k=0; k<size; k++) {
+                //Take each list from list of list and make a new list using it
+                vector <int> temp(result[k]); 
+                //Add each new element we are traversing through i and it to the new list made above
+                temp.push_back(nums[i]);
+                //Add the new list to the list of lists
+                result.push_back(temp);
+            }
+        }
+        return result;
     }
 };
