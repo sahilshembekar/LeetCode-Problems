@@ -116,4 +116,4 @@ project
 1198        | Find Smallest Common Element in All Rows                                        | [https://leetcode.com/problems/find-smallest-common-element-in-all-rows/](https://leetcode.com/problems/find-smallest-common-element-in-all-rows/)                                                                                 | Array, Hashing            | C++      | Medium |
 234        | Palindrome Linked List                                        | [https://leetcode.com/problems/palindrome-linked-list/](https://leetcode.com/problems/palindrome-linked-list/) | Linked List            | C++      | Easy | 
 118        | Pascal's Triangle                                        | [https://leetcode.com/problems/pascals-triangle/](https://leetcode.com/problems/pascals-triangle/) | Arrays            | C++      | Easy | 
-
+1043        | Partition Array for Maximum Sum                                       | [https://leetcode.com/problems/partition-array-for-maximum-sum/](https://leetcode.com/problems/partition-array-for-maximum-sum/) | Dynamic Programming             | C++      | Medium | 
