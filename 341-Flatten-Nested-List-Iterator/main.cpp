@@ -61,3 +61,35 @@ public:
  * NestedIterator i(nestedList);
  * while (i.hasNext()) cout << i.next();
  */
+
+
+//With recursion but not the correct working of an iterator
+
+
+class NestedIterator {
+public:
+    queue<int> q;
+    NestedIterator(vector<NestedInteger> &nestedList) {
+        dfs(nestedList);
+    }
+    
+    int next() {
+        int x=q.front();
+        q.pop();
+        return x;
+    }
+    
+    bool hasNext() {
+        return !q.empty();
+    }
+    void dfs(vector<NestedInteger> &nestedList)
+    {
+        for(auto x : nestedList){
+            if(x.isInteger()){
+                q.push(x.getInteger());
+            }
+            else
+                dfs(x.getList());
+        }
+    }
+};

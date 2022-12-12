@@ -78,7 +78,7 @@ public:
                 removeNode(tailprev);
                 
                 //Important to delete from the map as well
-                m.erase(tailprev->key); //can we do key?
+                m.erase(tailprev->key);
             }
             // Add the fresh Node
             Node *newNode = new Node(key,value); //from the parameters above
