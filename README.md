@@ -106,4 +106,7 @@ project
 99        | Recover Binary Search Tree                                        | [https://leetcode.com/problems/recover-binary-search-tree/](https://leetcode.com/problems/recover-binary-search-tree/)                                                                                 | Trees            | C++      | Hard |
 532        | K-diff Pairs in an Array                                        | [https://leetcode.com/problems/k-diff-pairs-in-an-array/](https://leetcode.com/problems/k-diff-pairs-in-an-array/)                                                                                 | 2 pointer            | C++      | Medium |
 1        | Two Sum                                        | [https://leetcode.com/problems/two-sum/](https://leetcode.com/problems/two-sum/)                                                                                 | 2 pointer, Hashing            | C++      | Medium |
+1198        | Find Smallest Common Element in All Rows                                        | [https://leetcode.com/problems/find-smallest-common-element-in-all-rows/](https://leetcode.com/problems/find-smallest-common-element-in-all-rows/)                                                                                 | Array, Hashing            | C++      | Medium |
+
+
 
