@@ -67,6 +67,8 @@ public:
             
             if (left1 == NULL || right1 == NULL || left1->val != right1->val) return false;
             
+
+            //Order is important as it will check index 0 & 1 then index 2 & 3 for symm 
             q.push(left1->left);
             q.push(right1->right);
             q.push(left1->right);

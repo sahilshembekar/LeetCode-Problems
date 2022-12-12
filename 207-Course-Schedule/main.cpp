@@ -44,29 +44,30 @@ public:
                 q.push(i); 
                 count ++; //Since we take the course we add it to our count
             }
-            }
-            if (q.size() == 0) { //Basically we cant take any course or all course are dependent on each other or cycle exists
-                return false;
-            }
-            
-            while (!q.empty()) {
-                int curr = q.front();
-                q.pop();
-                //Check the courses that are depended on this course curr from the map
-                vector <int> ans( m[curr] ); //Can have more than 1 courses dependent on it i.e. a vector store that in new vec for processing
-                if (ans.size()!=0) { //check only if we have anything there 
-                    for (int i=0; i < ans.size(); i++) {
-                        indegrees[ans[i]]--; // reduce the indgree count by 1 since one of the course required by it has been taken
-                        if (indegrees[ans[i]] == 0) { // if the course has now become independent, add it to the queue
-                            q.push(ans[i]);
-                            count++;
-                        }
+        }
+        
+        if (q.size() == 0) { //Basically we cant take any course or all course are dependent on each other or cycle exists
+            return false;
+        }
+        
+        while (!q.empty()) {
+            int curr = q.front();
+            q.pop();
+            //Check the courses that are depended on this course curr from the map
+            vector <int> ans( m[curr] ); //Can have more than 1 courses dependent on it i.e. a vector store that in new vec for processing
+            if (ans.size()!=0) { //check only if we have anything there 
+                for (int i=0; i < ans.size(); i++) {
+                    indegrees[ans[i]]--; // reduce the indgree count by 1 since one of the course required by it has been taken
+                    if (indegrees[ans[i]] == 0) { // if the course has now become independent, add it to the queue
+                        q.push(ans[i]);
+                        count++;
                     }
-                    
                 }
                 
             }
             
+        }
+        
         
         // cout << count <<endl;
         // cout << numCourses;

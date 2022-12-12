@@ -49,7 +49,7 @@ public:
                         }
                     }
 
-                } //3 for loop
+                } //3 for loop or 4
             dist++; // 5 
         }
         return mat;
@@ -57,5 +57,5 @@ public:
 };
 
 // Can also do without 1~5 
-//And instead of 7 use  mat[r][c]= mat[r][c] + 1; 
+//And instead of 7 use  mat[r][c]= mat[r][c] + 1; // probably this is correct -> mat[r][c]= mat[temp[0]][temp[1]] + 1 ??
 //basically babies will be 1 + whatever it is coming from

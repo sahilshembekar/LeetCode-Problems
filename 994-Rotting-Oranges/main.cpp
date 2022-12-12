@@ -13,7 +13,7 @@ public:
         int i,j,fresh=0;
         queue<vector<int>> q;
         
-        for(i=0;i<r;i++)
+        for(i=0;i<r;i++){
             for(j=0;j<c;j++)
                 //Traverse the grid
             {
@@ -27,6 +27,7 @@ public:
                     q.push(x);
                 }
             }
+        }    
         if(fresh==0) //if there are no fresh oranges then there is nothing to rot 
             return 0;
         if(q.empty())
