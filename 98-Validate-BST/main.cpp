@@ -151,3 +151,38 @@ public:
         return inorder(root);
     }
 };
+
+// Check limits at each node using local Max and min at each node
+// Broken code Max min issue?
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+    
+    //bool flag=true;
+    //TreeNode *prev=NULL;
+    
+    bool helper(TreeNode* root, int min, int max) {
+        // base
+        if ( (max != NULL) && (root->val >=max) ) return false;
+        if ( (min != NULL) && (root->val <=min) ) return false;
+        if (root == NULL)  return true;
+        //logic
+        return helper (root->left,min,root->val) && (root->right,root->val,max); 
+    }
+public:
+    bool isValidBST(TreeNode* root) {
+        if (root == NULL) {
+            return true;
+        }
+        return helper(root, NULL, NULL);
+    }
+};
