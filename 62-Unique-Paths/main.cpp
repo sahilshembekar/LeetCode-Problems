@@ -57,3 +57,29 @@ public:
         return dp[0][0];
     }
 };
+
+/*
+Time Complexity = O(m*n)
+Space Complexity = O(n)
+where m is the number of rows and n is the number of coloumns.
+*/
+
+//Overwrite the row/array
+
+class Solution {
+public:
+    int uniquePaths(int m, int n) {
+        //NULL case
+        if(m == 0 && n == 0) return 0;
+        
+        vector<int> dp(n,1); //Declaring a vector n columns/elements
+        
+        
+        for (int i=m-2; i>=0; i--) { //start from 2nd last // last already taken care of
+            for(int j=n-2; j>=0; j--) {
+                dp[j] = dp[j] + dp[j+1]; //old value will behave like bottom element and right will come from dp[j+1] 
+            }
+        }
+        return dp[0];
+    }
+};
