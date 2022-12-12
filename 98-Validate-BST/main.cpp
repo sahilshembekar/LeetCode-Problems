@@ -30,11 +30,11 @@ public:
             root = st.top();
             st.pop();    
         
-        if (Prev != NULL && Prev->val >= root->val) {
-            return false;
-        }
-        Prev = root;       
-        root = root ->right;
+            if (Prev != NULL && Prev->val >= root->val) {
+                return false;
+            }
+            Prev = root;       
+            root = root ->right;
         }
         return true;
     }
