@@ -1,3 +1,38 @@
+//Time Complexity = O(N*N*N)
+//Space Complexity = O(N) approximately
+//Where N is the size of the vector nums.
+//here the time limit will exceed.
+class Solution {
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        int i,j,k;
+        sort(nums.begin(),nums.end());
+        set <vector<int>> ans1;
+        for(i=0;i<nums.size()-2;i++)
+        {
+            for(j=i+1;j<nums.size()-1;j++)
+            {
+                for(k=j+1;k<nums.size();k++)
+                {
+                    if(nums[i]+nums[j]+nums[k]==0)
+                    {
+                        vector <int> temp{nums[i],nums[j],nums[k]};
+                        ans1.insert(temp);
+                    }
+                }
+            }
+        }
+        vector<vector<int>> ans;
+        for(auto i : ans1)
+            ans.push_back(i);
+        return ans;
+    }
+};
+
+
+//Time Complexity = O(N*N)
+//Space Complexity = O(1)
+//Where N is the size of the vector nums.
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
