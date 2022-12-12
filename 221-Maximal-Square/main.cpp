@@ -97,3 +97,43 @@ public:
         return maxi*maxi;
     }
 };
+
+/*
+Time Complexity = O(m*n)
+Space Complexity = O(n)
+where m is the number of rows and n is the number of coloumns in the matrix. 
+*/
+
+class Solution {
+public:
+    int maximalSquare(vector<vector<char>>& matrix) {
+        if (matrix.size() == 0) return 0;
+        int m = matrix.size();
+        int n = matrix[0].size();
+        
+        int i,j;
+        int maxi=0,prev=0,diagUp=0;
+        int dp[n+1]; //or can declare a vector
+        //Make first dummy row
+        for (i=0;i<=n;i++) {
+            //Make first row 0
+            dp[i] = 0;
+        }
+        for(i=1; i<=m;i++) {
+            for(j=1;j<=n;j++) {
+                prev = dp[j];
+                if (matrix[i-1][j-1] == '1') {
+                    dp[j] = min(diagUp, min(dp[j],dp[j-1])) + 1;
+                }
+                else {
+                    //basically if we encounter a 0 we do this
+                    //since we use the same array again and again
+                    dp[j] =0;
+                }
+                maxi = max(maxi,dp[j]);
+                diagUp = prev;
+            }
+        }
+        return maxi*maxi;
+    }
+};
