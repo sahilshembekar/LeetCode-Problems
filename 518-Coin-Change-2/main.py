@@ -11,7 +11,7 @@ class Solution:
         dp = [[0 for j in range(amount + 1)] for i in range(len(coins) + 1)]
         
         for i in range(len(dp)):
-            dp[i][0] = 1;
+            dp[i][0] = 1
             
         for i in range(1,len(dp)):
             for j in range(1,len(dp[0])):
