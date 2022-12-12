@@ -2,18 +2,6 @@
 // https://leetcode.com/problems/design-hashmap/
 // Array + Linked List 
 
-// int i = 42; 
-// int *pi = &i; 
-// int **ppi = &pi;
-
-// As you can see, the variable “i” is an int which I’ve set to the value 42.
-// pi is a pointer-to-int, which I’ve set to the address of i.
-// ppi is a pointer-to-pointer-to-int, which I’ve set to the address of pi.
-
-// So that’s all the double-asterisk means. It means “pointer-to-pointer”.
-
-// A pointer is a variable that holds a memory address. A pointer to a pointer simply holds the memory address of another pointer.
-
 
 class MyHashMap {
     class node{
@@ -99,3 +87,16 @@ class MyHashMap {
  * int param_2 = obj->get(key);
  * obj->remove(key);
  */
+
+// int i = 42; 
+// int *pi = &i; 
+// int **ppi = &pi;
+
+// As you can see, the variable “i” is an int which I’ve set to the value 42.
+// pi is a pointer-to-int, which I’ve set to the address of i.
+// ppi is a pointer-to-pointer-to-int, which I’ve set to the address of pi.
+
+// So that’s all the double-asterisk means. It means “pointer-to-pointer”.
+
+// A pointer is a variable that holds a memory address. A pointer to a pointer simply holds the memory address of another pointer.
+
