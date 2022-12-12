@@ -1,5 +1,0 @@
-/*
-
-This is s test code 
-
-*/
