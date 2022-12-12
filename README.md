@@ -1,19 +1,32 @@
-# LeetCode-Problems
+# LeetCode Solutions
 
-## This Repository contains solutionns to LeetCode Problems in C++.
+## Repository Structure
 
+```
+project
+│   README.md
+└───Problem-no-Problem-name
+    │   main.cpp
+```
+
+## Key points
+1. The table contains all the problems that have been solved so far. 
+2. There are some problems which have 2 or more solutions. Check number of `class XYZ{};` in `main.cpp` file.
+3. `Readme.md` last updated on `13th December 2021` 
+
+#
 
 
 | Problem no | Name                                                    | URL                                                                                                                                                                              | Method              | Language | Level  |
 | ---------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | -------- | ------ |
-| 9          | Palindrome Number                                       | [https://leetcode.com/problems/palindrome-number/](https://leetcode.com/problems/palindrome-number/)                                                                             | C++                 | Easy     |
+| 9          | Palindrome Number                                       | [https://leetcode.com/problems/palindrome-number/](https://leetcode.com/problems/palindrome-number/)                                                                             | \-                  | C++      | Easy   |
 | 11         | Container With Most Water                               | [https://leetcode.com/problems/container-with-most-water/](https://leetcode.com/problems/container-with-most-water/)                                                             | 2 pointers          | C++      | Medium |
-| 13         | Roman to Integer                                        | [https://leetcode.com/problems/roman-to-integer/](https://leetcode.com/problems/roman-to-integer/)                                                                               | C++                 | Easy     |
+| 13         | Roman to Integer                                        | [https://leetcode.com/problems/roman-to-integer/](https://leetcode.com/problems/roman-to-integer/)                                                                               | \-                  | C++      | Easy   |
 | 15         | 3Sum                                                    | [https://leetcode.com/problems/3sum/](https://leetcode.com/problems/3sum/)                                                                                                       | 2 pointers          | C++      | Medium |
 | 19         | Remove Nth Node From End of List                        | [https://leetcode.com/problems/remove-nth-node-from-end-of-list/](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)                                               | Linked List         | C++      | Medium |
 | 33         | Search in Rotated Sorted Array                          | [https://leetcode.com/problems/search-in-rotated-sorted-array/](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                                   | Binary Search       | C++      | Medium |
 | 34         | Find First and Last Position of Element in Sorted Array | [https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Binary Search       | C++      | Medium |
-| 35         | Search Insert Position                                  | [https://leetcode.com/problems/search-insert-position/](https://leetcode.com/problems/search-insert-position/)                                                                   | C++                 | Easy     |
+| 35         | Search Insert Position                                  | [https://leetcode.com/problems/search-insert-position/](https://leetcode.com/problems/search-insert-position/)                                                                   | \-                  | C++      | Easy   |
 | 39         | Combination Sum                                         | [https://leetcode.com/problems/combination-sum/](https://leetcode.com/problems/combination-sum/)                                                                                 | BackTracking        | C++      | Medium |
 | 49         | Group Anagrams                                          | [https://leetcode.com/problems/group-anagrams/](https://leetcode.com/problems/group-anagrams/)                                                                                   | Hashing             | C++      | Medium |
 | 51         | N-Queens                                                | [https://leetcode.com/problems/n-queens/](https://leetcode.com/problems/n-queens/)                                                                                               | BackTracking        | C++      | Hard   |
@@ -69,6 +82,6 @@
 | 706        | Design HashMap                                          | [https://leetcode.com/problems/design-hashmap/](https://leetcode.com/problems/design-hashmap/)                                                                                   | Design              | C++      | Easy   |
 | 733        | Flood Fill                                              | [https://leetcode.com/problems/flood-fill/](https://leetcode.com/problems/flood-fill/)                                                                                           | BFS,DFS             | C++      | Easy   |
 | 740        | Delete and Earn                                         | [https://leetcode.com/problems/delete-and-earn/](https://leetcode.com/problems/delete-and-earn/)                                                                                 | Dynamic Programming | C++      | Medium |
-| 876        | Middle of a linked List                                 |                                                                                                                                                                                  | Linked List         | C++      |        |
+| 876        | Middle of a linked List                                 | \-                                                                                                                                                                               | Linked List         | C++      | \-     |
 | 993        | Cousins in Binary Tree                                  | [https://leetcode.com/problems/cousins-in-binary-tree/](https://leetcode.com/problems/cousins-in-binary-tree/)                                                                   | BFS,DFS             | C++      | Easy   |
 | 994        | Rotting Oranges                                         | [https://leetcode.com/problems/rotting-oranges/](https://leetcode.com/problems/rotting-oranges/)                                                                                 | BFS,DFS             | C++      | Medium |
