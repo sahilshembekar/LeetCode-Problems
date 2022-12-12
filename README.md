@@ -118,3 +118,4 @@ project
 118        | Pascal's Triangle                                        | [https://leetcode.com/problems/pascals-triangle/](https://leetcode.com/problems/pascals-triangle/) | Arrays            | C++      | Easy | 
 1043        | Partition Array for Maximum Sum                                       | [https://leetcode.com/problems/partition-array-for-maximum-sum/](https://leetcode.com/problems/partition-array-for-maximum-sum/) | Dynamic Programming             | C++      | Medium | 
 221       | Maximal Square                                      | [https://leetcode.com/problems/maximal-square/](https://leetcode.com/problems/maximal-square/) | Dynamic Programming             | C++      | Medium | 
+62       | Unique Paths                                      | [https://leetcode.com/problems/unique-paths/](https://leetcode.com/problems/unique-paths/) | Dynamic Programming             | C++      | Medium | 
